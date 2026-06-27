@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СКУД-Система | Безопасность и контроль доступа</title>
-    
-    <!-- SEO Meta -->
-    <meta name="description" content="Профессиональные системы контроля и управления доступом (СКУД) для офисов, предприятий и жилых комплексов">
-    <meta name="keywords" content="СКУД, контроль доступа, безопасность, система управления доступом">
-    
+    <title>Миграционный пункт №3 — Люберцы | УФМС</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Миграционный пункт №3 в Люберцах. Адрес: ул. 8 Марта, 36А. Телефон: 8 (495) 558-54-55. Режим работы, услуги, запись на приём.">
+    <meta name="keywords" content="миграционный пункт 3 люберцы, уфмс люберцы, миграционная служба, 8 марта 36а, овир люберцы">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="СКУД-Система - Безопасность и контроль доступа">
-    <meta property="og:description" content="Профессиональные системы контроля и управления доступом">
+    <meta property="og:title" content="Миграционный пункт №3 — Люберцы">
+    <meta property="og:description" content="Официальная информация о работе миграционного пункта №3 в Люберцах">
     <meta property="og:type" content="website">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230066cc' stroke-width='2'%3E%3Cpath d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
-    
+
     <style>
         /* ============================================
            CSS Variables & Reset
            ============================================ */
         :root {
-            --primary: #0066cc;
-            --primary-dark: #004d99;
-            --primary-light: #e6f0fa;
-            --secondary: #00a86b;
+            --primary: #1a5276;
+            --primary-dark: #0e2f44;
+            --primary-light: #d4e6f1;
+            --secondary: #2e86c1;
+            --accent: #e67e22;
             --dark: #1a1a2e;
-            --dark-card: #16213e;
             --text: #2d3436;
             --text-light: #636e72;
             --white: #ffffff;
@@ -40,7 +40,6 @@
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Темная тема */
         [data-theme="dark"] {
             --text: #e9ecef;
             --text-light: #adb5bd;
@@ -52,7 +51,6 @@
             --shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.6);
         }
 
-        /* Reset */
         * {
             margin: 0;
             padding: 0;
@@ -65,7 +63,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--gray-100);
+            background: var(--gray-100);
             color: var(--text);
             line-height: 1.6;
             transition: var(--transition);
@@ -80,15 +78,10 @@
             list-style: none;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
         }
 
         /* ============================================
@@ -98,11 +91,11 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.75rem 1.75rem;
+            padding: 0.7rem 1.5rem;
             border: none;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.95rem;
             cursor: pointer;
             transition: var(--transition);
             text-decoration: none;
@@ -115,7 +108,7 @@
         .btn-primary:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.3);
+            box-shadow: 0 8px 25px rgba(26, 82, 118, 0.3);
         }
 
         .btn-secondary {
@@ -127,22 +120,22 @@
             transform: translateY(-2px);
         }
 
-        .btn-success {
-            background: var(--secondary);
+        .btn-accent {
+            background: var(--accent);
             color: var(--white);
         }
-        .btn-success:hover {
-            background: #008f5a;
+        .btn-accent:hover {
+            background: #d35400;
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 168, 107, 0.3);
+            box-shadow: 0 8px 25px rgba(230, 126, 34, 0.3);
         }
 
         /* ============================================
-           Header / Navigation
+           Header
            ============================================ */
         .header {
             background: var(--white);
-            border-bottom: 1px solid var(--gray-200);
+            border-bottom: 3px solid var(--primary);
             padding: 0.75rem 0;
             position: sticky;
             top: 0;
@@ -154,13 +147,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            font-size: 1.5rem;
+            gap: 0.75rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--primary);
         }
@@ -168,125 +162,43 @@
         .logo svg {
             width: 32px;
             height: 32px;
+            flex-shrink: 0;
+        }
+
+        .logo small {
+            font-size: 0.75rem;
+            font-weight: 400;
+            color: var(--text-light);
+            display: block;
         }
 
         .nav {
             display: flex;
             align-items: center;
-            gap: 2rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
 
         .nav a {
             font-weight: 500;
             color: var(--text);
             transition: var(--transition);
-            position: relative;
             padding: 0.25rem 0;
-        }
-
-        .nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary);
-            transition: var(--transition);
+            border-bottom: 2px solid transparent;
         }
 
         .nav a:hover {
             color: var(--primary);
-        }
-        .nav a:hover::after {
-            width: 100%;
+            border-bottom-color: var(--primary);
         }
 
-        .nav .has-dropdown {
-            position: relative;
-        }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius);
-            padding: 0.5rem 0;
-            min-width: 200px;
-            box-shadow: var(--shadow-hover);
-            margin-top: 0.5rem;
-        }
-
-        .has-dropdown:hover .dropdown {
-            display: block;
-        }
-
-        .dropdown a {
-            display: block;
-            padding: 0.5rem 1.5rem;
-            font-weight: 400;
-        }
-        .dropdown a:hover {
-            background: var(--primary-light);
-            color: var(--primary);
-        }
-
-        /* Мобильное меню */
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text);
-            padding: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-            .nav {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                padding: 1rem 0;
-                gap: 0.5rem;
-                border-top: 1px solid var(--gray-200);
-                margin-top: 1rem;
-            }
-            .nav.open {
-                display: flex;
-            }
-            .nav a {
-                width: 100%;
-                padding: 0.75rem 0;
-            }
-            .dropdown {
-                position: static;
-                box-shadow: none;
-                border: none;
-                padding-left: 1rem;
-            }
-            .has-dropdown:hover .dropdown {
-                display: none;
-            }
-            .has-dropdown.open .dropdown {
-                display: block;
-            }
-        }
-
-        /* Тема */
         .theme-toggle {
             background: none;
             border: 1px solid var(--gray-300);
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            font-size: 1.2rem;
+            width: 38px;
+            height: 38px;
+            font-size: 1.1rem;
             cursor: pointer;
             transition: var(--transition);
             display: flex;
@@ -298,219 +210,289 @@
             border-color: var(--primary);
         }
 
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text);
+            padding: 0.25rem 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                padding: 1rem 0;
+                gap: 0.75rem;
+                border-top: 1px solid var(--gray-200);
+                margin-top: 0.75rem;
+            }
+            .nav.open {
+                display: flex;
+            }
+            .nav a {
+                width: 100%;
+                padding: 0.5rem 0;
+            }
+            .logo {
+                font-size: 1.1rem;
+            }
+        }
+
         /* ============================================
-           Hero Section
+           Hero
            ============================================ */
         .hero {
-            padding: 5rem 0 4rem;
+            padding: 3rem 0 2.5rem;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: var(--white);
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: 800;
             line-height: 1.2;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
-        .hero p {
-            font-size: 1.25rem;
+        .hero .subtitle {
+            font-size: 1.2rem;
             opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 2rem;
+            margin-bottom: 0.75rem;
         }
 
-        .hero .btn-group {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .hero .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: var(--white);
-        }
-        .hero .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.35);
-            color: var(--white);
+        .hero .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 0.3rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
         }
 
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .hero {
-                padding: 3rem 0;
+                padding: 2rem 0;
             }
         }
 
         /* ============================================
-           Stats / Metrics
+           Info Cards
            ============================================ */
-        .stats {
-            padding: 3rem 0;
+        .info-cards {
+            padding: 2.5rem 0;
             background: var(--white);
-            border-bottom: 1px solid var(--gray-200);
         }
 
-        .stats-grid {
+        .cards-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            text-align: center;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
         }
 
-        .stat-item h3 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            font-weight: 800;
-        }
-
-        .stat-item p {
-            color: var(--text-light);
-            font-weight: 500;
-        }
-
-        @media (max-width: 768px) {
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 480px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* ============================================
-           Features / Services
-           ============================================ */
-        .features {
-            padding: 4rem 0;
-        }
-
-        .features h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .features .subtitle {
-            text-align: center;
-            color: var(--text-light);
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background: var(--white);
+        .card {
+            background: var(--gray-100);
             border-radius: var(--radius);
-            padding: 2rem;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            padding: 1.5rem;
             border: 1px solid var(--gray-200);
+            transition: var(--transition);
         }
 
-        .feature-card:hover {
-            transform: translateY(-4px);
+        .card:hover {
             box-shadow: var(--shadow-hover);
+            transform: translateY(-3px);
         }
 
-        .feature-card .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
+        .card .icon {
+            font-size: 2rem;
             margin-bottom: 0.5rem;
-            font-size: 1.25rem;
         }
 
-        .feature-card p {
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: var(--primary);
+        }
+
+        .card p, .card .info-line {
             color: var(--text-light);
             font-size: 0.95rem;
         }
 
-        @media (max-width: 992px) {
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        .card .info-line {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0;
         }
-        @media (max-width: 576px) {
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
+
+        .card .info-line strong {
+            color: var(--text);
+            min-width: 70px;
+        }
+
+        .card .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .card .schedule {
+            margin-top: 0.5rem;
+        }
+
+        .card .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.2rem 0;
+            font-size: 0.9rem;
+            border-bottom: 1px dashed var(--gray-200);
+        }
+
+        .card .schedule-item:last-child {
+            border-bottom: none;
         }
 
         /* ============================================
-           About / Info
+           Services
            ============================================ */
-        .about {
-            padding: 4rem 0;
+        .services {
+            padding: 3rem 0;
+            background: var(--gray-100);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .services .subtitle {
+            text-align: center;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-item {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-200);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .service-item:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-3px);
+        }
+
+        .service-item .icon {
+            font-size: 2.5rem;
+        }
+
+        .service-item h4 {
+            margin: 0.5rem 0 0.25rem;
+            font-size: 1rem;
+        }
+
+        .service-item p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           Important Info
+           ============================================ */
+        .important {
+            padding: 2.5rem 0;
             background: var(--white);
         }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
+        .important-box {
+            background: #fff8e7;
+            border-left: 5px solid var(--accent);
+            padding: 1.5rem 2rem;
+            border-radius: var(--radius);
+            border: 1px solid #fdebd0;
+            border-left-width: 5px;
         }
 
-        .about h2 {
-            font-size: 2.5rem;
+        [data-theme="dark"] .important-box {
+            background: #2d1f0e;
+            border-color: #7d4a1a;
+        }
+
+        .important-box h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .important-box ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .important-box ul li {
+            margin: 0.25rem 0;
+        }
+
+        /* ============================================
+           Footer
+           ============================================ */
+        .footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 2rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
             margin-bottom: 1.5rem;
         }
 
-        .about p {
-            color: var(--text-light);
-            margin-bottom: 1rem;
+        .footer h4 {
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
         }
 
-        .about ul {
-            margin: 1.5rem 0;
+        .footer a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            display: block;
+            padding: 0.2rem 0;
+            font-size: 0.9rem;
         }
 
-        .about ul li {
-            padding: 0.5rem 0;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+        .footer a:hover {
+            color: var(--white);
         }
 
-        .about ul li::before {
-            content: '✓';
-            color: var(--secondary);
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-
-        .about-image {
-            background: var(--gray-200);
-            border-radius: var(--radius);
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--text-light);
-        }
-
-        @media (max-width: 768px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
+        .footer .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
         }
 
         /* ============================================
@@ -523,13 +505,13 @@
             right: 0;
             background: var(--dark);
             color: var(--white);
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.5rem;
             display: none;
             justify-content: space-between;
             align-items: center;
             z-index: 9999;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 0.75rem;
         }
 
         .cookie-consent.show {
@@ -537,96 +519,35 @@
         }
 
         .cookie-consent p {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             opacity: 0.9;
             flex: 1;
         }
 
         .cookie-consent a {
-            color: var(--primary-light);
+            color: #85c1e9;
             text-decoration: underline;
         }
 
-        .cookie-consent .btn-group {
-            display: flex;
-            gap: 0.75rem;
-        }
-
         .cookie-consent .btn {
-            padding: 0.5rem 1.25rem;
-            font-size: 0.9rem;
-        }
-
-        .cookie-consent .btn-success {
-            background: var(--secondary);
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
         }
 
         /* ============================================
-           Footer
-           ============================================ */
-        .footer {
-            background: var(--dark);
-            color: var(--white);
-            padding: 3rem 0 1.5rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer h4 {
-            margin-bottom: 1rem;
-            color: var(--white);
-            font-size: 1.1rem;
-        }
-
-        .footer a {
-            color: rgba(255, 255, 255, 0.7);
-            transition: var(--transition);
-            display: block;
-            padding: 0.25rem 0;
-        }
-
-        .footer a:hover {
-            color: var(--white);
-        }
-
-        .footer .copyright {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 1.5rem;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (max-width: 480px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* ============================================
-           Scroll to top
+           Scroll Top
            ============================================ */
         .scroll-top {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 44px;
-            height: 44px;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 40px;
+            height: 40px;
             border: none;
             border-radius: 50%;
             background: var(--primary);
             color: var(--white);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             cursor: pointer;
             box-shadow: var(--shadow-hover);
             transition: var(--transition);
@@ -652,209 +573,192 @@
     <!-- ============================================
     HEADER
     ============================================ -->
-    <header class="header" role="banner">
+    <header class="header">
         <div class="container">
-            <a href="/" class="logo" aria-label="СКУД-Система">
+            <a href="/" class="logo">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                 </svg>
-                СКУД-Система
+                <span>
+                    Миграционный пункт №3
+                    <small>Отдел по вопросам миграции МУ МВД «Люберецкое»</small>
+                </span>
             </a>
 
-            <nav class="nav" role="navigation" aria-label="Основное меню">
-                <a href="#features">Услуги</a>
-                <a href="#about">О компании</a>
-                <span class="has-dropdown">
-                    <a href="#">Решения</a>
-                    <div class="dropdown">
-                        <a href="#">Для офиса</a>
-                        <a href="#">Для производства</a>
-                        <a href="#">Для ЖК</a>
-                    </div>
-                </span>
-                <a href="#contact">Контакты</a>
-                
-                <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
-                    🌓
-                </button>
+            <nav class="nav">
+                <a href="#info">Контакты</a>
+                <a href="#services">Услуги</a>
+                <a href="#important">Важно</a>
+                <a href="https://guvm.mvd.ru" target="_blank">ГУВМ.МВД.РФ</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Тема">🌓</button>
             </nav>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
-                ☰
-            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Меню">☰</button>
         </div>
     </header>
 
     <!-- ============================================
     HERO
     ============================================ -->
-    <section class="hero" id="hero">
+    <section class="hero">
         <div class="container">
-            <h1>Современные системы контроля доступа</h1>
-            <p>Обеспечиваем безопасность и управление доступом для компаний любого масштаба. Интеграция с 1С, СКУД и видеонаблюдением.</p>
-            <div class="btn-group">
-                <a href="#features" class="btn btn-primary">Подробнее →</a>
-                <a href="#contact" class="btn btn-secondary">Связаться</a>
+            <div class="badge">📍 Код подразделения: 500-075</div>
+            <h1>Миграционный пункт №3</h1>
+            <p class="subtitle">г. Люберцы, ул. 8 Марта, д. 36А</p>
+            <p style="opacity: 0.85; max-width: 600px; margin: 0 auto;">
+                Официальное подразделение отдела по вопросам миграции<br>
+                МУ МВД России «Люберецкое»
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================
+    INFO CARDS
+    ============================================ -->
+    <section class="info-cards" id="info">
+        <div class="container">
+            <div class="cards-grid">
+
+                <!-- Адрес -->
+                <div class="card">
+                    <div class="icon">📍</div>
+                    <h3>Адрес</h3>
+                    <div class="info-line"><strong>Город:</strong> Люберцы</div>
+                    <div class="info-line"><strong>Улица:</strong> ул. 8 Марта, д. 36А</div>
+                    <div class="info-line"><strong>Индекс:</strong> 140007</div>
+                    <div style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-light);">
+                        <a href="https://yandex.ru/maps/?text=Люберцы+ул.8+Марта+36А" target="_blank" style="color:var(--primary); text-decoration:underline;">
+                            🗺 Открыть на карте
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Контакты -->
+                <div class="card">
+                    <div class="icon">📞</div>
+                    <h3>Контакты</h3>
+                    <div class="info-line"><strong>Телефон:</strong> <a href="tel:84955585455" style="color:var(--primary);">8 (495) 558-54-55</a></div>
+                    <div class="info-line"><strong>Горячая линия:</strong> 8 (495) 692-70-66</div>
+                    <div class="info-line"><strong>E-mail:</strong> dfedotov26@mvd.ru</div>
+                    <div style="margin-top:0.75rem; font-size:0.85rem; color:var(--text-light);">
+                        <a href="https://гувм.мвд.рф" target="_blank" style="color:var(--primary); text-decoration:underline;">
+                            🌐 guvm.mvd.ru
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Режим работы -->
+                <div class="card">
+                    <div class="icon">🕐</div>
+                    <h3>Режим работы</h3>
+                    <div class="schedule">
+                        <div class="schedule-item"><span>Понедельник</span><span>09:00 – 18:00</span></div>
+                        <div class="schedule-item"><span>Вторник</span><span>11:00 – 20:00</span></div>
+                        <div class="schedule-item"><span>Среда</span><span>09:00 – 18:00</span></div>
+                        <div class="schedule-item"><span>Четверг</span><span>11:00 – 20:00</span></div>
+                        <div class="schedule-item"><span>Пятница</span><span>09:00 – 16:45</span></div>
+                        <div class="schedule-item"><span>Суббота</span><span>09:00 – 16:00</span></div>
+                        <div class="schedule-item" style="color:var(--accent); font-weight:600;"><span>Воскресенье</span><span>Выходной</span></div>
+                    </div>
+                    <p style="font-size:0.8rem; color:var(--text-light); margin-top:0.5rem;">Перерыв: 13:00 – 13:45</p>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- ============================================
-    STATS
+    SERVICES
     ============================================ -->
-    <section class="stats" id="stats">
+    <section class="services" id="services">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3 id="statUsers">0</h3>
-                    <p>Пользователей</p>
+            <h2>Услуги и функции</h2>
+            <p class="subtitle">Что можно сделать в миграционном пункте №3</p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="icon">🪪</div>
+                    <h4>Постановка на учёт</h4>
+                    <p>Миграционный учёт иностранных граждан и лиц без гражданства</p>
                 </div>
-                <div class="stat-item">
-                    <h3 id="statAccess">0</h3>
-                    <p>Точек доступа</p>
+                <div class="service-item">
+                    <div class="icon">📄</div>
+                    <h4>Разрешительные документы</h4>
+                    <p>Оформление РВП, ВНЖ, патентов, разрешений на работу</p>
                 </div>
-                <div class="stat-item">
-                    <h3 id="statEvents">0</h3>
-                    <p>Событий в день</p>
+                <div class="service-item">
+                    <div class="icon">🔄</div>
+                    <h4>Регистрация по месту жительства</h4>
+                    <p>Временная и постоянная регистрация для иностранных граждан</p>
                 </div>
-                <div class="stat-item">
-                    <h3 id="statUptime">0%</h3>
-                    <p>Время работы</p>
+                <div class="service-item">
+                    <div class="icon">📋</div>
+                    <h4>Приём уведомлений</h4>
+                    <p>Приём уведомлений от работодателей о заключении/расторжении трудовых договоров</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">🖐️</div>
+                    <h4>Дактилоскопия</h4>
+                    <p>Добровольная дактилоскопическая регистрация</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">💬</div>
+                    <h4>Консультации</h4>
+                    <p>Разъяснение миграционного законодательства Российской Федерации</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ============================================
-    FEATURES
+    IMPORTANT INFORMATION
     ============================================ -->
-    <section class="features" id="features">
+    <section class="important" id="important">
         <div class="container">
-            <h2>Наши решения</h2>
-            <p class="subtitle">Комплексный подход к безопасности вашего бизнеса</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">🔒</div>
-                    <h3>СКУД</h3>
-                    <p>Системы контроля доступа с биометрией, картами и интеграцией с 1С</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📹</div>
-                    <h3>Видеонаблюдение</h3>
-                    <p>IP-камеры с AI-аналитикой и облачным хранением архива</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📊</div>
-                    <h3>Аналитика</h3>
-                    <p>Сбор статистики, отчеты и дашборды для принятия решений</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">☁️</div>
-                    <h3>Облачные решения</h3>
-                    <p>Управление доступом из любой точки мира через веб-интерфейс</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🔐</div>
-                    <h3>152-ФЗ</h3>
-                    <p>Полное соответствие законодательству о персональных данных</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">⚡</div>
-                    <h3>Интеграция</h3>
-                    <p>Синхронизация с 1С, Active Directory и другими системами</p>
-                </div>
+            <div class="important-box">
+                <h3>⚠️ Важная информация</h3>
+                <ul>
+                    <li><strong>Запись на приём:</strong> осуществляется через портал <a href="https://gosuslugi.ru" target="_blank" style="color:var(--primary); text-decoration:underline;">Госуслуги (gosuslugi.ru)</a> или при личном обращении.</li>
+                    <li><strong>Приём уведомлений от работодателей:</strong> производится по адресу: г. Люберцы, ул. Кирова, д. 10 (кабинет 10), телефон: 8 (495) 503-44-46.</li>
+                    <li><strong>Телефон доверия ГУ МВД по МО:</strong> 8 (495) 692-70-66 (круглосуточно, анонимно).</li>
+                    <li><strong>Дежурная часть МУ МВД «Люберецкое»:</strong> 8 (495) 554-93-94.</li>
+                    <li><strong>Официальный сайт МВД:</strong> <a href="https://мвд.рф" target="_blank" style="color:var(--primary); text-decoration:underline;">https://мвд.рф</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-    ABOUT
-    ============================================ -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div>
-                    <h2>Почему выбирают нас</h2>
-                    <p>Мы специализируемся на внедрении систем контроля доступа с 2010 года. Наши решения работают на предприятиях, в офисах и жилых комплексах по всей России.</p>
-                    <ul>
-                        <li>Собственные разработки на базе Astro + Headless CMS</li>
-                        <li>Адаптация под 1С-Bitrix и корпоративные порталы</li>
-                        <li>Резервное копирование и восстановление данных</li>
-                        <li>Контент-ориентированный подход (книга «Не заставляйте меня думать»)</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Обсудить проект</a>
-                </div>
-                <div class="about-image">
-                    🏢
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================
-    CONTACT
-    ============================================ -->
-    <section class="features" id="contact">
-        <div class="container">
-            <h2>Свяжитесь с нами</h2>
-            <p class="subtitle">Оставьте заявку, и мы подберем оптимальное решение для вас</p>
-            
-            <form style="max-width: 600px; margin: 0 auto; background: var(--white); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--gray-200);">
-                <div style="margin-bottom: 1.5rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Ваше имя</label>
-                    <input type="text" placeholder="Иван Иванов" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--gray-300); border-radius: 8px; background: var(--gray-100); color: var(--text); font-size: 1rem;">
-                </div>
-                <div style="margin-bottom: 1.5rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
-                    <input type="email" placeholder="ivan@company.ru" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--gray-300); border-radius: 8px; background: var(--gray-100); color: var(--text); font-size: 1rem;">
-                </div>
-                <div style="margin-bottom: 1.5rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Сообщение</label>
-                    <textarea rows="4" placeholder="Расскажите о вашей задаче..." style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--gray-300); border-radius: 8px; background: var(--gray-100); color: var(--text); font-size: 1rem; resize: vertical; font-family: inherit;"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success" style="width: 100%; justify-content: center;">Отправить заявку</button>
-                <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-light); text-align: center;">
-                    Нажимая кнопку, вы соглашаетесь с 
-                    <a href="#" style="color: var(--primary); text-decoration: underline;">политикой обработки данных</a>
-                </p>
-            </form>
         </div>
     </section>
 
     <!-- ============================================
     FOOTER
     ============================================ -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h4>СКУД-Система</h4>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">Профессиональные решения для безопасности и контроля доступа с 2010 года.</p>
-                </div>
-                <div>
-                    <h4>Решения</h4>
-                    <a href="#">СКУД</a>
-                    <a href="#">Видеонаблюдение</a>
-                    <a href="#">Аналитика</a>
-                    <a href="#">Интеграция с 1С</a>
-                </div>
-                <div>
-                    <h4>Компания</h4>
-                    <a href="#about">О нас</a>
-                    <a href="#">Проекты</a>
-                    <a href="#">Блог</a>
-                    <a href="#">Вакансии</a>
+                    <h4>Миграционный пункт №3</h4>
+                    <p style="color:rgba(255,255,255,0.6); font-size:0.9rem;">Отдел по вопросам миграции МУ МВД России «Люберецкое»</p>
+                    <p style="color:rgba(255,255,255,0.4); font-size:0.8rem; margin-top:0.5rem;">Код подразделения: 500-075</p>
                 </div>
                 <div>
                     <h4>Контакты</h4>
-                    <a href="mailto:info@skud-system.ru">info@skud-system.ru</a>
-                    <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-                    <a href="#">г. Москва, ул. Примерная, д. 1</a>
+                    <a href="tel:84955585455">8 (495) 558-54-55</a>
+                    <a href="mailto:dfedotov26@mvd.ru">dfedotov26@mvd.ru</a>
+                    <a href="https://гувм.мвд.рф" target="_blank">гувм.мвд.рф</a>
+                </div>
+                <div>
+                    <h4>Полезные ссылки</h4>
+                    <a href="https://gosuslugi.ru" target="_blank">Госуслуги</a>
+                    <a href="https://мвд.рф" target="_blank">МВД РФ</a>
+                    <a href="https://50.мвд.рф" target="_blank">ГУ МВД по МО</a>
+                </div>
+                <div>
+                    <h4>Адрес</h4>
+                    <a href="#">140007, Московская обл.,<br>г. Люберцы, ул. 8 Марта, д. 36А</a>
                 </div>
             </div>
             <div class="copyright">
-                © 2026 СКУД-Система. Все права защищены. Соответствует 152-ФЗ.
+                © 2026 Миграционный пункт №3 г. Люберцы. Информация для граждан.
+                <br>Соответствует требованиям 152-ФЗ.
             </div>
         </div>
     </footer>
@@ -864,17 +768,17 @@
     ============================================ -->
     <div class="cookie-consent show" id="cookieConsent">
         <p>
-            Мы используем cookies для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с 
+            Мы используем cookies для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с
             <a href="#" id="policyLink">политикой обработки персональных данных</a> в соответствии с 152-ФЗ.
         </p>
-        <div class="btn-group">
-            <button class="btn btn-secondary" id="cookieReject">Отказаться</button>
-            <button class="btn btn-success" id="cookieAccept">Принять</button>
+        <div>
+            <button class="btn btn-secondary" id="cookieReject" style="background:rgba(255,255,255,0.15); color:#fff;">Отказаться</button>
+            <button class="btn btn-primary" id="cookieAccept">Принять</button>
         </div>
     </div>
 
     <!-- ============================================
-    SCROLL TO TOP
+    SCROLL TOP
     ============================================ -->
     <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
 
@@ -883,18 +787,13 @@
     ============================================ -->
     <script>
         // ============================================
-        // 1. ТЕМА (светлая/темная)
+        // ТЕМА
         // ============================================
         (function theme() {
             const toggle = document.getElementById('themeToggle');
             const html = document.documentElement;
-            
-            // Восстановление
             const saved = localStorage.getItem('theme');
-            if (saved === 'dark') {
-                html.setAttribute('data-theme', 'dark');
-            }
-            
+            if (saved === 'dark') html.setAttribute('data-theme', 'dark');
             toggle.addEventListener('click', function() {
                 const isDark = html.getAttribute('data-theme') === 'dark';
                 html.setAttribute('data-theme', isDark ? 'light' : 'dark');
@@ -903,155 +802,54 @@
         })();
 
         // ============================================
-        // 2. МОБИЛЬНОЕ МЕНЮ
+        // МОБИЛЬНОЕ МЕНЮ
         // ============================================
         (function mobileMenu() {
             const toggle = document.getElementById('menuToggle');
             const nav = document.querySelector('.nav');
-            
             toggle.addEventListener('click', function() {
                 const isOpen = nav.classList.toggle('open');
-                toggle.setAttribute('aria-expanded', isOpen);
                 toggle.textContent = isOpen ? '✕' : '☰';
+                toggle.setAttribute('aria-expanded', isOpen);
             });
         })();
 
         // ============================================
-        // 3. АНИМАЦИЯ СТАТИСТИКИ (счетчик)
-        // ============================================
-        (function animateStats() {
-            const stats = [
-                { id: 'statUsers', target: 1250, suffix: '' },
-                { id: 'statAccess', target: 86, suffix: '' },
-                { id: 'statEvents', target: 4230, suffix: '' },
-                { id: 'statUptime', target: 99.97, suffix: '%' }
-            ];
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        stats.forEach((stat) => {
-                            const el = document.getElementById(stat.id);
-                            let current = 0;
-                            const duration = 2000;
-                            const steps = 60;
-                            const increment = stat.target / steps;
-                            const stepTime = duration / steps;
-                            
-                            const timer = setInterval(() => {
-                                current += increment;
-                                if (current >= stat.target) {
-                                    el.textContent = stat.target + stat.suffix;
-                                    clearInterval(timer);
-                                } else {
-                                    el.textContent = Math.round(current) + stat.suffix;
-                                }
-                            }, stepTime);
-                        });
-                        observer.disconnect();
-                    }
-                });
-            }, { threshold: 0.5 });
-
-            const statsSection = document.getElementById('stats');
-            if (statsSection) observer.observe(statsSection);
-        })();
-
-        // ============================================
-        // 4. COOKIE CONSENT (152-ФЗ)
+        // COOKIE CONSENT
         // ============================================
         (function cookieConsent() {
             const consent = document.getElementById('cookieConsent');
             const acceptBtn = document.getElementById('cookieAccept');
             const rejectBtn = document.getElementById('cookieReject');
-            
-            // Проверяем, давал ли пользователь согласие
-            const cookieAccepted = localStorage.getItem('cookieConsent');
-            
-            if (cookieAccepted === 'accepted' || cookieAccepted === 'rejected') {
+
+            if (localStorage.getItem('cookieConsent') === 'accepted' ||
+                localStorage.getItem('cookieConsent') === 'rejected') {
                 consent.classList.remove('show');
             }
-            
+
             acceptBtn.addEventListener('click', function() {
                 localStorage.setItem('cookieConsent', 'accepted');
                 consent.classList.remove('show');
-                // Здесь можно отправить событие в аналитику
-                console.log('Cookie consent accepted');
             });
-            
+
             rejectBtn.addEventListener('click', function() {
                 localStorage.setItem('cookieConsent', 'rejected');
                 consent.classList.remove('show');
-                console.log('Cookie consent rejected');
             });
         })();
 
         // ============================================
-        // 5. SCROLL TO TOP
+        // SCROLL TOP
         // ============================================
         (function scrollTop() {
             const btn = document.getElementById('scrollTop');
-            
             window.addEventListener('scroll', function() {
-                if (window.scrollY > 500) {
-                    btn.classList.add('visible');
-                } else {
-                    btn.classList.remove('visible');
-                }
+                btn.classList.toggle('visible', window.scrollY > 400);
             });
-            
             btn.addEventListener('click', function() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         })();
-
-        // ============================================
-        // 6. АНАЛИТИКА (Яндекс Метрика + GA)
-        // ============================================
-        (function analytics() {
-            // Яндекс Метрика
-            (function(m,e,t,r,i,k,a){
-                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j=0; j<document.scripts.length; j++) {
-                    if (document.scripts[j].src===r) return;
-                }
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],
-                k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-            })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-            
-            ym(12345678, "init", {
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true
-            });
-            
-            // Google Analytics
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
-            
-            // Отслеживание кликов
-            document.addEventListener('click', function(e) {
-                const el = e.target.closest('a, button, .btn');
-                if (el) {
-                    const label = el.textContent.trim() || el.className || 'click';
-                    gtag('event', 'click', {
-                        'event_category': 'button',
-                        'event_label': label.slice(0, 50)
-                    });
-                    ym(12345678, 'reachGoal', 'button_click');
-                }
-            });
-        })();
-
-        // ============================================
-        // 7. СООТВЕТСТВИЕ 152-ФЗ (дополнительно)
-        // ============================================
-        console.log('Сайт соответствует требованиям 152-ФЗ');
-        console.log('Политика обработки персональных данных: /privacy-policy');
     </script>
 
 </body>
